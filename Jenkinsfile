@@ -8,7 +8,7 @@ pipeline {
             }
             steps {
                 echo 'Building..'
-                env
+                sh 'env'
             }
         }
         stage('Test') {
@@ -17,13 +17,13 @@ pipeline {
             }
             steps {
                 echo 'Testing..'
-                env
+                sh 'env'
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                env
+                sh 'env'
             }
         }
     }
